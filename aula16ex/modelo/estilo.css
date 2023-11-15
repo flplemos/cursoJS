@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: auto;
+    text-align: center;
+    background: lightblue;
+    font: normal 15pt Arial;
+    min-width: 320px;
+    max-width: 800px;
+
+    
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    padding: 10px;
+    text-shadow: 0.8px 0.8px 0.8px black;
+}
+
+section {
+   
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 350px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.315);
+
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+
+#valoresregistrados {
+    margin: 5px auto; 
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.5em;
+    height: 150px;
+    width: 100px;
+    overflow-y: scroll;
+
+} 
+
+.texto {
+    padding: 10px;
+    font-size: 0.8em;
+    margin: auto;
+    text-align: center;
+}
+
+.botoes {
+    padding: 3px;
+    margin: 5px;
+
+}
