@@ -13,7 +13,7 @@
         if (passo === 0 || isNaN(passo)) {
             // Se o passo for zero ou nenhum número, exibir mensagem de erro em um pop-up
             alert('O passo não pode ser zero. Por favor, escolha um passo válido.');
-            return; // Encerra a função aqui
+            return; // Encerra a função aqu
         }
     
         
