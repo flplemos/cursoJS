@@ -10,12 +10,13 @@
         // Limpar os resultados anteriores
         resultado.innerHTML = '';
 
-        if (passo === 0) {
-            // Se o passo for zero, exibir mensagem de erro em um pop-up
+        if (passo === 0 || isNaN(passo)) {
+            // Se o passo for zero ou nenhum número, exibir mensagem de erro em um pop-up
             alert('O passo não pode ser zero. Por favor, escolha um passo válido.');
             return; // Encerra a função aqui
         }
     
+        
 
     
         if (isNaN(inicio) || isNaN(fim)) {
