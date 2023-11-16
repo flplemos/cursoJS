@@ -19,7 +19,7 @@ function adicionar() {
             window.alert('Este número já foi inserido. Digite um número diferente.');
         }
     } else {
-        window.alert('Digite um número válido maior que zero');
+        window.alert('Digite um número válido, entre 1 e 100');
     }
 }
 
