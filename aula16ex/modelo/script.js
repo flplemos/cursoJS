@@ -3,23 +3,32 @@ let bloco = [];
 function adicionar() {
     let numbInput = document.getElementById('numb');
     let numb = parseInt(numbInput.value);
-    let valoresregistrados = document.getElementById('valoresregistrados')
+    let valoresregistrados = document.getElementById('valoresregistrados');
+    let resultado = document.getElementById('resultado');
 
-    
+    resultado.innerHTML = "";
 
+        // Verifica se o número é valido e maior que zero:
     if (!isNaN(numb) && numb > 0) {
-        bloco.push(numb);
-        valoresregistrados.innerHTML += `<br> ${numb} adicionado. <br>`;
-        numbInput.value = '';
-
+        // Verifica se o número já foi adicionado:
+        if (!bloco.includes(numb)) {
+            bloco.push(numb);
+            valoresregistrados.innerHTML += `<br> ${numb} adicionado. <br>`;
+            numbInput.value = '';
+        } else {
+            window.alert('Este número já foi inserido. Digite um número diferente.');
+        }
     } else {
         window.alert('Digite um número válido maior que zero');
     }
 }
 
+
 function finalizar() {
-    let resultado = document.getElementById('resultado')
-   
+    let resultado = document.getElementById('resultado');
+    let valoresregistrados = document.getElementById('valoresregistrados');
+
+   valoresregistrados.innerHTML = '';
 
 
     if (bloco.length > 0) {
@@ -41,9 +50,11 @@ function finalizar() {
         resultado.innerHTML += `Ao todo temos ${bloco.length} números cadastrados<br>`;
         resultado.innerHTML += `Somando todos os valores temos ${total} no total<br>`
         resultado.innerHTML += `A média dos valores é = ${media}`
+        bloco = [];
     } else {
         resultado.innerHTML = 'Nenhum valor cadastrado.';
     }
+
 }
 
 
