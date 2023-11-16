@@ -8,8 +8,8 @@ function adicionar() {
 
     resultado.innerHTML = "";
 
-        // Verifica se o número é valido e maior que zero:
-    if (!isNaN(numb) && numb > 0) {
+        // Verifica se o número é valido e maior que zero e menor que 100:
+    if (!isNaN(numb) && numb > 0 && numb <= 100) {
         // Verifica se o número já foi adicionado:
         if (!bloco.includes(numb)) {
             bloco.push(numb);
